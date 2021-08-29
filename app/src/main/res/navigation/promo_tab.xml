@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/promo_tab"
+    app:startDestination="@id/navigation_promo">
+
+    <fragment
+        android:id="@+id/navigation_promo"
+        android:name="com.example.kpm.ui.promo.PromoFragment"/>
+</navigation>

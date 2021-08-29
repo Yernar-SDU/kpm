@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_tab"
+    app:startDestination="@id/navigation_profile">
+
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.kpm.ui.profile.ProfileFragment"
+        tools:layout="@layout/fragment_profile_logged_in">
+        <action
+            android:id="@+id/to_login"
+            app:destination="@id/fragment_login"/>
+
+        <action
+            android:id="@+id/to_profile"
+            app:destination="@id/navigation_profile"/>
+        <action
+            android:id="@+id/to_loading_dialog_fragment"
+            app:destination="@id/loading_dialog_fragment"/>
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/fragment_login"
+        android:name="com.example.kpm.ui.login.LoginFragment"
+        tools:layout="@layout/fragment_login_page">
+        <action
+            android:id="@+id/to_profile"
+            app:destination="@id/navigation_profile"/>
+        <action
+            android:id="@+id/to_loading_dialog_fragment"
+            app:destination="@id/loading_dialog_fragment"/>
+    </fragment>
+
+    <dialog
+        android:id="@+id/loading_dialog_fragment"
+        android:name="com.example.kpm.ui.loading.LoadingDialogFragment"
+        tools:layout="@layout/fragment_loading"/>
+</navigation>

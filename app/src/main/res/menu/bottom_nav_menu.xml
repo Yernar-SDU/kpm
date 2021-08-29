@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/promo_tab"
+        android:icon="@drawable/promo_image"
+        android:title="@string/promo_action" />
+
+    <item
+        android:id="@+id/archive_tab"
+        android:icon="@drawable/archive_image"
+        android:title="@string/archive" />
+
+    <item
+        android:id="@+id/profile_tab"
+        android:icon="@drawable/profile_image"
+        android:title="@string/profile" />
+
+</menu>

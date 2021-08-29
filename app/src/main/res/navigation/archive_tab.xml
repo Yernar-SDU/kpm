@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/archive_tab"
+    app:startDestination="@id/navigation_promo">
+
+    <fragment
+        android:id="@+id/navigation_promo"
+        android:name="com.example.kpm.ui.archive.ArchiveFragment">
+        <action
+            android:id="@+id/to_login_dialog_fragment"
+            app:destination="@id/login_dialog_fragment"/>
+        <action
+            android:id="@+id/to_loading_dialog_fragment"
+            app:destination="@id/loading_dialog_fragment"/>
+
+    </fragment>
+
+    <dialog
+        android:id="@+id/login_dialog_fragment"
+        android:name="com.example.kpm.ui.LoginDialogFragment">
+    </dialog>
+
+    <dialog
+        android:id="@+id/loading_dialog_fragment"
+        android:name="com.example.kpm.ui.loading.LoadingDialogFragment"/>
+</navigation>

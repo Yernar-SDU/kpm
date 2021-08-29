@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">KPM</string>
+    <string name="no_internet_connection">no internet connection</string>
+    <string name="socket_timeout_exception">socket timeout exception</string>
+    <string name="profile">Профиль</string>
+    <string name="promo_action">Промо акций</string>
+    <string name="archive">Архивы</string>
+
+    <string-array name="valuta_strings">
+        <item>EURUSD</item>
+        <item>GBPUSD</item>
+        <item>USDJPY</item>
+        <item>USDCHF</item>
+        <item>USDCAD</item>
+        <item>AUDUSD</item>
+        <item>NZDUSD</item>
+        <item>GBPJPY</item>
+        <item>EURJPY</item>
+    </string-array>
+</resources>

@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.KPM" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="BottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="background">@drawable/background_bottom_navigation</item>
+        <item name="itemBackground">@color/white</item>
+        <item name="itemIconTint">@drawable/tab_color</item>
+        <item name="android:textColor">@drawable/tab_color</item>
+        <item name="labelVisibilityMode">labeled</item>
+    </style>
+
+
+    <style name="TextViewStyle" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">@color/violet</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+</resources>
